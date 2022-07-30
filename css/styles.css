@@ -6,7 +6,7 @@
     padding: 0;
 }
 body{
-    font-family: Andika;
+    font-family: Inter!important;
     background-color: #FBFCFF;
 }
 
@@ -55,6 +55,13 @@ body{
     gap: 36px;
 }
 
+.nav_right li:nth-child(3) a{
+    color: #ffffff;
+    background-color: #112CCC;
+    border-radius: 12px;
+    padding: 8px 20px;
+}
+
 
 /* Content Section */
 
@@ -76,13 +83,72 @@ body{
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    padding-top: 60px;
+    padding-top: 95px;
 }
 
 .content__text .heading{
-    font-size: 73px;
+    font-size: 80px;
     line-height: 80px;
-    font-family: Inter;
+    font-family: Andika!important;
+    font-weight: 700;
+}
+
+.content__text .subtitle{
+    font-size: 18px;
+    margin-top: 25px;
+    color: #777777;
+}
+
+.subscribe_form{
+    display:  flex;
+    gap: 2rem;
+    margin-top:30px;
+}
+
+.subscribe_form input{
+    width: 100%;
+    max-width: 350px;
+    padding: 15px 20px;
+    background: #ffffff;
+    border:  1px solid #efefef;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #777777;
+}
+
+.subscribe_form input:focus{
+    border: 1px solid #112CCC;
+    outline: none;
+}
+
+.sendlink{
+    background-color: #112CCC;
+    padding: 15px 20px;
+    color: #ffffff;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sendlink:hover{
+    background-color: midnightblue;
+    padding: 15px 30px;
+}
+
+
+.terms{
+    font-size: 14px;
+    color: #999999;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+.downloadbox{
+    display: flex;
+    gap: 2rem;
 }
 
 
@@ -104,4 +170,34 @@ body{
 
 .footerbox{
     flex-basis: 25%;
+}
+
+.footerbox:first-child{
+    flex-basis: 70%;
+}
+
+.footerbox .heading{
+    margin-bottom: 30px;
+
+}
+
+.footerbox .image{
+    height: 50px;
+    display: flex;
+}
+
+.footerbox .about{
+    margin-top: 25px;
+    max-width: 50%;
+    
+}
+
+.footerbox li{
+    list-style: none;
+    margin: 15px 0;
+}
+
+.footerbox li a{
+    color: #ffffff;
+    text-decoration: none;
 }
