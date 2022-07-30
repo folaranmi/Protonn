@@ -201,3 +201,33 @@ body{
     color: #ffffff;
     text-decoration: none;
 }
+
+
+
+/* Responsiveness */
+
+@media screen and (max-width:998px){
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .application{
+        max-height: 600px;
+        width: auto;
+    }
+
+    .content__text{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 65px;
+        padding-bottom: 100px;
+    }
+
+    .content__text .heading{
+        font-size: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+}
